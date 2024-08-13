@@ -6,10 +6,12 @@ import './index.css'
 import { configureStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux'
 import userReducer from "./features/user.js"
+import themeReducer from "./features/theme.js"
 
 const store = configureStore({
   reducer: {
     user: userReducer,
+    theme: themeReducer,
   },
 })
 
