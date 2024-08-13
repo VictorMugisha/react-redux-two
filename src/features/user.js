@@ -4,10 +4,10 @@ export const userSlice = createSlice({
     name: "user",
     initialState: {
         value: {
-            name: "Victor Mugisha Shyaka",
+            name: "",
             age: 0,
-            username: "victor",
-            email: "helloworld@example.com"
+            username: "",
+            email: ""
         }
     },
     reducers: {
@@ -16,5 +16,7 @@ export const userSlice = createSlice({
         },
     },
 })
+
+export const { login } = userSlice.actions
 
 export default userSlice.reducer
